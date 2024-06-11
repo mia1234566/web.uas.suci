@@ -1,0 +1,99 @@
+/* Menggunakan Montserrat sebagai font default */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+/* Gaya untuk tautan */
+a {
+    text-decoration: none;
+    color: rgb(255, 0, 98);
+}
+
+/* Gaya untuk paragraf */
+p {
+    color: rgb(30, 28, 28);
+    margin: 0 0 16px 0;
+}
+
+/* Gaya untuk tombol primer */
+.btn {
+    background-color: rgb(255, 0, 98);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Gaya untuk tombol sekunder */
+.btn-alt {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.765);
+    margin-right: 20px; /* Mengurangi margin-right agar tombol tidak terlalu terpisah */
+    border: 2px solid rgb(255, 0, 98);
+    padding: 8px 24px; /* Menambahkan padding agar ukuran tombol tetap konsisten */
+    cursor: pointer;
+}
+body {
+    background-image: url(https://plus.unsplash.com/premium_photo-1691979207044-2079b438af30?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJhY2tncm91bmQlMjBwaW5rfGVufDB8fDB8fHwxar.jpg);
+    background-size: cover; /* Untuk memastikan gambar background menutupi seluruh area body */
+    background-position: center; /* Untuk memastikan gambar background berada di tengah-tengah body */
+    background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar background */
+}
+
+/* Mengatur margin bawah untuk paragraf di dalam elemen dengan kelas "landing" */
+.landing p {
+    margin-bottom: 24px; /* Mengurangi margin-bottom agar ruang antar paragraf lebih sedikit */
+}
+
+/* Gaya untuk tautan di dalam navigasi */
+nav a {
+    color: rgb(255, 0, 98);
+} 
+
+/* Mengatur lebar div di dalam elemen dengan id "landing" */
+#landing > div {
+    width: 100%; /* Mengubah lebar menjadi 100% agar div memenuhi lebar kontainer */
+}
+
+/* Tata letak flex untuk elemen-elemen di dalam elemen dengan id "about" */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px; /* Menggunakan "gap" sebagai pengganti "column-gap" yang sudah usang */
+}
+
+/* Gaya untuk div di dalam elemen dengan id "about" */
+#about > div {
+    width: 48%; /* Mengurangi lebar div agar ada ruang antar elemen */
+}
+
+/* Tata letak grid untuk elemen dengan id "about-stats" */
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Mengatur ruang antar elemen di dalam grid */
+    text-align: center;
+    margin-top: 48px; /* Mengurangi margin-top agar tidak terlalu jauh dari elemen sebelumnya */
+
+}/* Mengatur lebar maksimum gambar menjadi 100% dari kontainer */
+img {
+    max-width: 50%;
+    height: auto; /* Untuk memastikan aspek rasio gambar tetap terjaga */
+}
+.container {
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+    align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+}
+
+.teks {
+    margin-left: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
